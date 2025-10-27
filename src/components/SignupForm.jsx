@@ -28,7 +28,7 @@ const SignupForm = () => {
         e.preventDefault();
         try{
         const user={name,username,password,phonenumber,email};
-        await axios.post("http://localhost:6900/api/user/signup",user)
+        await axios.post("https://project-plhb.vercel.app/api/user/signup",user)
         alert("Signup successful");
         resetform();
         navigate("/login");
