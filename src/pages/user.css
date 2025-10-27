@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+#table{
+    height:100vh;
+    width:100vw;
+    background-color: aqua;
+}
+#pop{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+}

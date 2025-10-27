@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#signup1{
+    height:100vh;
+    width:100vw;
+    background-image: url("../assets/signup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#signup2{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    position: relative;
+    top:4vw;
+    height:85%;
+    width:28%;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 20px;
+    cursor:pointer;
+    text-decoration: none;
+}
+#signup2 form{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    
+}
+#signup2 form h1{
+    color: #fff;
+    font-size: 2.7vw;
+    font-weight: 700;
+    align-self: center;
+    margin-top: 2.0vw;
+    cursor: pointer;
+}
+#signup2 form h1:hover{
+    font-size: 2.8;
+    font-style: italic;
+}
+#signup2 form label{
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 0.5vw;
+    margin-left:1.4vw;
+}
+#signup2 form input{
+    color: blue;
+    background-color: #fff;
+    font-size: 1.2vw;
+    height: 10%;
+    width: 25vw;
+    align-self: center;
+    border-radius: 10px;
+}
+#signup2 form input:hover{
+    cursor: pointer;
+    width:26vw;
+}
+#signup2 form button{
+    align-self: center;
+    width: 25vw;
+
+    font-size: 1.5vw;
+    position: relative;
+    bottom: 2vw;
+    top:1.3vw;
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: #fff;
+}
+#signup2 form button:hover{
+    font-size: 1.6vw;
+    cursor: pointer;
+    width: 26vw;
+}
+#signup2 p{
+    font-size: 1.0vw;
+    color: #fff;
+    margin-top: 2.6vw;
+    margin-bottom: 1.6vw;
+    text-align: center;
+}
+#detail{
+    width:10%;
+    font-size: 1.7vw;
+    align-self: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.9);
+    position: relative;
+    bottom: 70%;
+    left:80%;
+    border-radius: 20px;
+
+}
+#detail:hover{
+    font-size: 1.8vw;
+    cursor: pointer;
+}
