@@ -29,7 +29,7 @@ const UserDetails = () => {
         e.preventDefault();
         if(!updateid) return;
         try{
-        await axios.put(`http://localhost:6900/api/user/update/${updateid}`,{name,username,phonenumber,email})
+        await axios.put(`https://project-plhb.vercel.app/api/user/update/${updateid}`,{name,username,phonenumber,email})
         alert("Data updated successfully");
         reset();
         fetchdetails();
@@ -53,7 +53,7 @@ const UserDetails = () => {
     const [user,setUser]=useState([])
     const fetchdetails=async()=>{
         try{
-        const res=await axios.get("http://localhost:6900/api/user/finddata")
+        const res=await axios.get("https://project-plhb.vercel.app/api/user/finddata")
         setUser(res.data);
         }catch(err){
             console.error("error",err);
@@ -68,7 +68,7 @@ const UserDetails = () => {
     const handeldelete=async(id)=>{
         try{
         if(!window.confirm("Are you sure to delete this data?")) return;
-        await axios.delete(`http://localhost:6900/api/user/delete/${id}`)
+        await axios.delete(`https://project-plhb.vercel.app/api/user/delete/${id}`)
         alert("Data deleted successfully");
         fetchdetails();
     }catch(err){
